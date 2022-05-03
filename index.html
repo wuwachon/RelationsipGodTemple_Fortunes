@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Look for Relationship</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://img.onl/Qjgokl" alt="" width="35" height="35"
+          class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-4" aria-current="page" href="#">月老家</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="#">籤詩總覽</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 月老家 -->
+  <div class="container mt-1">
+
+    <div class="container god-temple d-flex justify-content-between">
+      <div class="words left-word">
+        <h1>命裡無時莫強求</h1>
+      </div>
+      <!-- 籤筒 -->
+      <div class="fortune-stick pt-3" data-bs-toggle="modal" data-bs-target="#today-fortune">
+        <img src="https://img.onl/qmzNOm" id="fortune-stick" alt="籤筒">
+      </div>
+      <!-- 月老 -->
+      <div class="god-of-relationship">
+        <img src="https://img.onl/1xaeHW" class="mx-auto d-block" alt="月老" id="god-of-relationship">
+      </div>
+      <!-- 擲茭 -->
+      <div class="divination-blocks pt-5" data-bs-toggle="modal" data-bs-target="#divination-result">
+        <img src="https://img.onl/BhwD7C" id="divination-blocks" alt="擲茭">
+      </div>
+      <div class="words right-word fw-bold">
+        <h1>命理有時終須有</h1>
+      </div>
+    </div>
+    <!-- 供桌 -->
+    <div class="offering-table d-flex justify-content-around ps-2 pe-2">
+      <img src="https://img.onl/bhZRmH" alt="桌子" id="offering-table">
+      <div class="table-top" ondrop="drop(event)" ondragover="allowDrag(event)">
+      </div>
+      <div class="table-top" ondrop="drop(event)" ondragover="allowDrag(event)">
+      </div>
+      <div class="incense-burner">
+        <img src="https://img.onl/jU0bY" alt="香爐" id="incense-burner">
+        <button type="button" class="btn btn-light" id="clear-table">清理供品</button>
+      </div>
+    </div>
+    <!-- 供品 -->
+    <div class="offerings d-flex mt-4">
+      <button type="button" class="btn btn-warning show-items fs-5 mt-2 mb-2">供品置辦</button>
+      <div class="offering-list"></div>
+    </div>
+
+  </div>
+
+  <!-- Modal 籤詩-->
+  <div class="modal fade" id="today-fortune" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered today-fortune">
+      <div class="fortune-scroll d-flex justify-content-center">
+        <img src="https://img.onl/irC4yM" id="fortune-scroll" alt="卷軸">
+      </div>
+      <div class="fortune-text">
+        <ul class="list-unstyled modal-body align-self-lg-center" id="fortune-text">
+          <li>要怎麼收穫，</li>
+          <li>先要怎麼栽。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 擲茭 -->
+  <div class="modal fade" id="divination-result" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="divination-result">
+        <img src="https://img.onl/BhwD7C" id="divination-result-img" alt="擲茭結果">
+      </div>
+    </div>
+  </div>
+
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+</html>

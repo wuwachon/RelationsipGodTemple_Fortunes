@@ -1,0 +1,158 @@
+.god-of-relationship {
+  width: 50%;
+}
+
+#god-of-relationship {
+  width: 22vw;
+}
+
+.words {
+  width: 3%;
+  height: 10px;
+  color: darkred;
+  font-size: 90%;
+}
+
+.offering-table {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 50%;
+  height: 25vh;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+#offering-table {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.table-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 15vh;
+}
+
+.incense-burner {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  height: 15vh;
+}
+
+#incense-burner {
+  width: 150%;
+}
+
+.offerings {
+  box-sizing: border-box;
+  width: 50%;
+  height: 12vh;
+  margin: 0 auto;
+}
+
+.offering {
+  width: 5vw;
+  height: 5.5vw;
+}
+
+.today-fortune {
+  position: relative;
+}
+
+.fortune-scroll {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 52vh;
+  width: 70vw;
+}
+
+#fortune-scroll {
+  width: 110%;
+  height: 50vh;
+}
+
+.fortune-text {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  height: 25%;
+  background-color: antiquewhite;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.fortune-stick,
+.divination-blocks {
+  width: 18%;
+}
+
+#fortune-stick {
+  width: 100%;
+}
+
+#divination-blocks {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#fortune-stick:hover,
+#divination-blocks:hover {
+  animation: shake 1s linear infinite;
+}
+
+#divination-result-img {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+  }
+
+  25% {
+    transform: rotate(-5deg);
+    transform-origin: bottom center;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+  }
+
+  75% {
+    transform: rotate(5deg);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+  }
+}
